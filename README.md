@@ -73,13 +73,17 @@ Display bar chart showing number of students in each score level and dynamic sub
     ```bash
     docker compose up -d --build
 
-5. Generate application key:
+5. Install composer:
+    ```bash
+    docker compose exec app composer install
+
+6. Generate application key:
     ```bash
     docker compose exec app php artisan key:generate
 
-6. Run migrations and seeders:
+7. Run migrations and seeders:
 	```bash
 	docker compose exec app php artisan migrate:fresh --seed
 
-7. Access the application:
+8. Access the application:
 	Web app: http://localhost:8000
