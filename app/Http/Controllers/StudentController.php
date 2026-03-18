@@ -22,6 +22,6 @@ class StudentController extends Controller
             ->limit(10)
             ->get();
 
-        return view('students.group_a', compact('students'));
+        return view('pages.score', compact('students'));
     }
 }

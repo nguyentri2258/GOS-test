@@ -9,7 +9,7 @@ class ScoreController extends Controller
 {
     public function index()
     {
-        return view('scores.index');
+        return view('pages.score');
     }
 
     public function check(Request $request)
@@ -26,6 +26,6 @@ class ScoreController extends Controller
                 ->withInput();
         }
 
-        return view('scores.index', compact('score'));
+        return view('pages.score', compact('score'));
     }
 }

@@ -21,7 +21,7 @@ class ReportController extends Controller
             'gdcd' => 'GDCD',
         ];
 
-        return view('reports.index', compact('subjects'));
+        return view('pages.report', compact('subjects'));
     }
 
     public function chart(Request $request)
