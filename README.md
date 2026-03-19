@@ -2,54 +2,78 @@
 
 This project is a Laravel-based web application built as an assignment to manage and analyze national high school exam scores.
 
-The system allows users to:
-- Search student scores by registration number
-- View statistical reports by subject and score levels
-- View top 10 students in Group A (Math, Physics, Chemistry)
+---
 
-## Features
+## Features:
 
-1. Score Checking
+### 1. Score Checking
 
 - Search student scores by registration number (SBD)
 - Display detailed subject scores
-- Show validation error when registration number is not found
+- Show validation error when the registration number is not found
 
-2. Score Report (Statistics)
+---
 
-Score levels:
-- ≥ 8
-- 8 > x ≥ 6
-- 6 > x ≥ 4
-- < 4
+### 2. Score Report (Statistics)
 
-Display bar chart showing number of students in each score level and dynamic subject selection
+- Analyze score distribution by subject
 
-3. Top 10 Students – Group A
+- Score levels:
+    - ≥ 8
+    - 8 > x ≥ 6
+    - 6 > x ≥ 4
+    - < 4
 
-- Group A includes: Math, Physics, Chemistry
-- Calculate total score = Math + Physics + Chemistry
-- Display top 10 students ordered by total score
+- Display bar charts for each score range
+- Dynamic subject selection
 
-4. Responsive UI
+---
+
+### 3. Top Students Ranking (Multiple Groups)
+
+- Support multiple subject groups:
+- Users can select group dynamically
+- Calculate total score based on selected group
+- Display **Top 10 students** ranked by total score
+
+---
+
+### 4. UI Customization (Settings)
+
+- Adjust font size:
+  - Small (14px)
+  - Medium (16px – default)
+  - Large (18px)
+
+---
+
+### 5. Responsive UI
 
 - Responsive layout using Bootstrap 5
 - Sidebar navigation with offcanvas menu
-- Mobile, tablet, and desktop friendly
+- Optimized for mobile, tablet, and desktop
 
-## Tech Stack
+---
 
-- Backend: Laravel 12.x and PHP >= 8.2
-- Database: MySQL
-- Frontend: Blade, Bootstrap 5
+## 🛠 Tech Stack
+
+- Backend: Laravel 12.x, PHP >= 8.2
+- Database: MySQL(local), PostgreSQL(render)
+- Frontend: Blade, Bootstrap 5, JavaScript
 - Environment: Docker
 
-## Database and Seeder
+---
+
+## Database & Seeder
 
 - Data source: CSV file
 - Imported using Laravel Seeder
-- Batch insert (1000 rows per batch) to reduce memory usage
-- Disabled query log and manual garbage collection for performance
+- Optimized with:
+  - Batch insert (1000 rows per batch)
+  - Disabled query log
+  - Manual garbage collection
+
+---
 
 ## Installation
 

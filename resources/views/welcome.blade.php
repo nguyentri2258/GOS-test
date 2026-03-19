@@ -37,7 +37,7 @@
                 <div class="card shadow-sm border-0 p-4 text-center h-100 hover-card">
                     <h1>🏆</h1>
                     <h5 class="fw-bold">Top Students</h5>
-                    <p class="text-muted">Group A ranking</p>
+                    <p class="text-muted">Top 10 ranking</p>
                 </div>
             </a>
         </div>
