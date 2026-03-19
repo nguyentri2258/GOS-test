@@ -1,43 +1,37 @@
 <div class="offcanvas offcanvas-start bg-white shadow"
      tabindex="-1"
      id="sidebar">
-
     <div class="offcanvas-header bg-primary text-white">
         <h5 class="fw-bold">Menu</h5>
         <button type="button" class="btn-close btn-close-white"
                 data-bs-dismiss="offcanvas"></button>
     </div>
-
     <div class="offcanvas-body p-3">
         <ul class="nav nav-pills flex-column gap-2">
-
             <li>
-                <a class="nav-link {{ request()->routeIs('students.group_a') ? 'active' : '' }}"
-                   href="{{ route('students.group_a') }}">
-                    📊 Dashboard
+                <a class="nav-link {{ request()->routeIs('students.*') ? 'active' : '' }}"
+                   href="{{ route('students.index') }}">
+                    Dashboard
                 </a>
             </li>
-
             <li>
                 <a class="nav-link {{ request()->routeIs('scores.*') ? 'active' : '' }}"
                    href="{{ route('scores.index') }}">
-                    🔍 Search Scores
+                    Score Lookup
                 </a>
             </li>
-
             <li>
                 <a class="nav-link {{ request()->routeIs('reports.*') ? 'active' : '' }}"
                    href="{{ route('reports.index') }}">
-                    📈 Reports
+                    Reports
                 </a>
             </li>
-
             <li>
-                <a class="nav-link text-muted" href="#">
-                    ⚙ Settings
+                <a class="nav-link {{ request()->routeIs('settings') ? 'active' : '' }}"
+                href="{{ route('settings.index') }}">
+                    Settings
                 </a>
             </li>
-
         </ul>
     </div>
 </div>

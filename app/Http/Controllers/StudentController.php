@@ -6,7 +6,7 @@ use App\Models\Score;
 
 class StudentController extends Controller
 {
-    public function group_a()
+    public function index()
     {
         $students = Score::selectRaw('
                 sbd,
@@ -22,6 +22,6 @@ class StudentController extends Controller
             ->limit(10)
             ->get();
 
-        return view('pages.score', compact('students'));
+        return view('pages.student', compact('students'));
     }
 }

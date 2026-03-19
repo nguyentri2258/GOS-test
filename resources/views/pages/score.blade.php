@@ -37,15 +37,15 @@
         <table class="table table-bordered table-striped text-center">
             <thead class="table-dark">
                 <tr>
-                    <th>Toán</th>
-                    <th>Ngữ văn</th>
-                    <th>Ngoại ngữ</th>
-                    <th>Vật lí</th>
-                    <th>Hóa học</th>
-                    <th>Sinh học</th>
-                    <th>Lịch sử</th>
-                    <th>Địa lí</th>
-                    <th>GDCD</th>
+                    <th>Math</th>
+                    <th>Literature</th>
+                    <th>English</th>
+                    <th>Physics</th>
+                    <th>Chemistry</th>
+                    <th>Biology</th>
+                    <th>History</th>
+                    <th>Geography</th>
+                    <th>Civic Education</th>
                 </tr>
             </thead>
             <tbody>
@@ -70,4 +70,9 @@
         </table>
     </div>
 </div>
+<style>
+    th, td {
+        white-space: nowrap;
+    }
+</style>
 @endsection

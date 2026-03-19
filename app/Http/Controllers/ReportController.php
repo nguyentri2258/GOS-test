@@ -10,15 +10,15 @@ class ReportController extends Controller
     public function index()
     {
         $subjects = [
-            'toan' => 'Toán',
-            'ngu_van' => 'Ngữ văn',
-            'ngoai_ngu' => 'Ngoại ngữ',
-            'vat_li' => 'Vật lí',
-            'hoa_hoc' => 'Hóa học',
-            'sinh_hoc' => 'Sinh học',
-            'lich_su' => 'Lịch sử',
-            'dia_li' => 'Địa lí',
-            'gdcd' => 'GDCD',
+            'toan' => 'Math',
+            'ngu_van' => 'Literature',
+            'ngoai_ngu' => 'English',
+            'vat_li' => 'Physics',
+            'hoa_hoc' => 'Chemistry',
+            'sinh_hoc' => 'Biology',
+            'lich_su' => 'History',
+            'dia_li' => 'Geography',
+            'gdcd' => 'Civic Education',
         ];
 
         return view('pages.report', compact('subjects'));
